@@ -11,7 +11,7 @@
                 <Label Text="This is nice card" />
             </ia:CardView>-->
 
-            <ia:CardView Title="Select Account type" HasShadow="True" VerticalOptions="Center" WidthRequest="200" HorizontalOptions="CenterAndExpand">
+            <ia:CardView Title="Select Account type" HasShadow="True" VerticalOptions="Center" WidthRequest="250" HorizontalOptions="CenterAndExpand">
 
                 <Grid VerticalOptions="CenterAndExpand">
                     <Grid.ColumnDefinitions>
