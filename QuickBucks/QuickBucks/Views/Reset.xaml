@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickBucks.Views.Reset">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" x:Name="myStack"  >
+                <Entry Placeholder="Username or Email"  />
+                <Entry Placeholder="Password" IsPassword="True" />
+                <Button Clicked="Button_Clicked" BackgroundColor="OrangeRed" TextColor="White" x:Name="myBtn" Text="Test Animation" />
+            </StackLayout>
+          
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

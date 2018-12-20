@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuickBucks.Views.NextPage"
+             xmlns:ia="clr-namespace:IntelliAbb.Xamarin.Controls;assembly=IntelliAbb.Xamarin.Controls"
+             >
+    <ContentPage.Content>
+        <StackLayout x:Name="mtStack" VerticalOptions="StartAndExpand">
+
+            <!--<ia:CardView Icon="some.png" Title="Some Card" CornerRadius="8" HasShadow="false">
+                <Label Text="This is nice card" />
+            </ia:CardView>-->
+
+            <ia:CardView Title="Select Account type" HasShadow="True" VerticalOptions="Center" WidthRequest="200" HorizontalOptions="CenterAndExpand">
+
+                <Grid VerticalOptions="CenterAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto" />
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Savings" Grid.Column="0" />
+                    <ia:Checkbox x:Name="savingsChkBox"  CheckColor="White" Shape="Circle" IsCheckedChanged="Checkbox_IsCheckedChanged" Grid.Column="1" />
+                </Grid>
+             
+            </ia:CardView>
+
+            <ia:CardView x:Name="Balance">
+                <Label Text="Content only card" />
+            </ia:CardView>
+
+
+            <Button Text="button 1" Clicked="MyBtn1_Clicked" BackgroundColor="BlueViolet" x:Name="myBtn1" />
+            <Button Text="button 2" Clicked="MyBtn2_Clicked" BackgroundColor="GreenYellow" x:Name="myBtn2" />
+            <Button Text="button 3" Clicked="MyBtn3_Clicked" BackgroundColor="IndianRed" x:Name="myBtn3" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
