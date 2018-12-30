@@ -15,11 +15,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Views\Test\MyPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Update="Views\NextPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Reset.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Dashboard\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Views\Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Test\MyPage.xaml.cs" />
   </ItemGroup>
 </Project>

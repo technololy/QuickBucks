@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
@@ -96,7 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QuickBucks\QuickBucks.csproj">
-      <Project>{8A19E1C6-CBB5-456A-AA5C-DA5A4A022BD1}</Project>
+      <Project>{34C56A0D-CD70-4D61-B8AF-D6401F4FB2FD}</Project>
       <Name>QuickBucks</Name>
     </ProjectReference>
   </ItemGroup>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="QuickBucks.Controls.framez">
+    <Grid>
+          
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                
+            </Grid.RowDefinitions>
+            
+            <Frame Grid.Row="0" 
+                   BackgroundColor="orange" 
+                   HasShadow="false" 
+                   TranslationY="50"
+                   Margin="5,0,5,0"
+                   >
+                
+            </Frame>
+               <Frame HasShadow="false" 
+                      Grid.Row="0" 
+                      CornerRadius="0" 
+                      BackgroundColor="#35394a"
+                      TranslationY="0"
+                      >
+        </Frame>
+        </Grid>
+</ContentView>

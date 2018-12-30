@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="QuickBucks.Views.Dashboard.Landing" Padding="15,5,15,5" xmlns:c="clr-namespace:QuickBucks.Controls" BackgroundColor="White">
+   <!-- <ScrollView>-->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="5*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="40*"/>
+            
+            </Grid.RowDefinitions>
+            <!--       <Frame HasShadow="false"
+               Margin="5"
+               TranslationY="30"
+               CornerRadius="30"
+               BackgroundColor="orange"
+               Grid.Row="0">
+        </Frame>-->
+            <Grid Grid.Row="0" RowSpacing="0" ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Frame Margin="5,5,5,0" x:Name="nameBanner" HasShadow="false" CornerRadius="0" BackgroundColor="#35394a" Grid.Row="0" Grid.ColumnSpan="2">
+                    <StackLayout>
+                        <Label Text="Welcome," TextColor="White" />
+                        <Label Text="OYEBANJI OLOLADE" TextColor="White" />
+                    </StackLayout>
+                </Frame>
+                <Button BorderRadius="0" Margin="5,0,0,0" Text="Outstanding Loans" Grid.Row="1" Grid.Column="0" BackgroundColor="orange" />
+                <Button BorderRadius="0" Margin="0,0,5,0" Text="Main Loan" Grid.Row="1" Grid.Column="1" BackgroundColor="Silver" />
+            </Grid>
+            <StackLayout Grid.Row="1" Margin="5,0,0,0">
+                <Label Text="INSTANT LOAN PRODUCTS" />
+            </StackLayout>
+            <Grid Margin="5,0,5,0" Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <c:Frames x:Name="LoanElement1" Grid.Column="0">
+                    <c:Frames.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PayDayLoan_Tapped" />
+                    </c:Frames.GestureRecognizers>
+                </c:Frames>
+                <c:Frames x:Name="LoanElement2" Grid.Column="1" />
+                <c:Frames x:Name="LoanElement3" Grid.Column="2" />
+            </Grid>
+         <StackLayout Margin="5,0,0,0" Grid.Row="3">
+                <Label Text="OTHER LOAN PRODUCTS" />
+            </StackLayout>
+               <Grid Margin="5,0,5,0" Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <c:Frames x:Name="LoanElement11" Grid.Column="0">
+                    <c:Frames.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PayDayLoan_Tapped" />
+                    </c:Frames.GestureRecognizers>
+                </c:Frames>
+                <c:Frames x:Name="LoanElement22" Grid.Column="1" />
+                <c:Frames x:Name="LoanElement33" Grid.Column="2" />
+            </Grid>
+        </Grid>
+           
+<!--    </ScrollView>-->
+</ContentPage>

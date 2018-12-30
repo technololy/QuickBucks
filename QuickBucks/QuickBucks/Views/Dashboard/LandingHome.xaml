@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="QuickBucks.Views.Dashboard.LandingHome" xmlns:c="clr-namespace:QuickBucks.Controls" BackgroundColor="Gray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" RowSpacing="0" ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Frame Margin="5,5,5,0" x:Name="nameBanner" HasShadow="false" CornerRadius="0" BackgroundColor="#35394a" Grid.Row="0" Grid.ColumnSpan="2">
+              <!--  <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Welcome," TextColor="White" />
+                            <Span Text="OLOLADE OYEBANJI" TextColor="White" FontAttributes="Bold">
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>-->
+                <Label Text="Welcome, &#10; OLOLADE OYEBANJI" TextColor="White" />
+              
+            </Frame>
+            <Button BorderRadius="0" HeightRequest="10" Margin="5,0,0,0" Text="Outstanding Loans" Grid.Row="1" Grid.Column="0" BackgroundColor="orange" />
+            <Button BorderRadius="0" HeightRequest="10" Margin="0,0,5,0" Text="Main Loan" Grid.Row="1" Grid.Column="1" BackgroundColor="Silver" />
+        </Grid>
+        <StackLayout Margin="5,0,0,0" Grid.Row="1">
+            <Label Text="INSTANT LOAN PRODUCTS" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="White" />
+        </StackLayout>
+        <Grid Grid.Row="2" ColumnSpacing="0">
+            <c:RelativeFrames Grid.Column="0" HeightRequest="350" WidthRequest="150" />
+            <c:RelativeFrames Grid.Column="1" HeightRequest="350" WidthRequest="150" />
+            <c:RelativeFrames Grid.Column="2" HeightRequest="350" WidthRequest="150" />
+        </Grid>
+        <StackLayout Margin="5,0,5,0" Grid.Row="3">
+            <Label Text="OTHER LOAN PRODUCTS" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  />
+        </StackLayout>
+        <Grid Grid.Row="4" ColumnSpacing="0">
+            <c:RelativeFrames Grid.Column="0" HeightRequest="350" WidthRequest="150" />
+            <c:RelativeFrames Grid.Column="1" HeightRequest="350" WidthRequest="150" />
+            <c:RelativeFrames Grid.Column="2" HeightRequest="350" WidthRequest="150" />
+        </Grid>
+    </Grid>
+</ContentPage>

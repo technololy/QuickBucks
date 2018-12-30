@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using QuickBucks.Views;
+using QuickBucks.Views.Dashboard;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace QuickBucks
@@ -14,7 +15,7 @@ namespace QuickBucks
             InitializeComponent();
 
 
-            MainPage = new MainPage();
+            MainPage = new LandingHome();
         }
 
         protected override void OnStart()
