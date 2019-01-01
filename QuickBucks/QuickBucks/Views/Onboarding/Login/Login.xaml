@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="QuickBucks.Views.Onboarding.Login.Login"
+              xmlns:local="clr-namespace:QuickBucks.Controls"
+             BackgroundColor="{StaticResource PrimaryColor}"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <ContentPage.Content>
+          <ScrollView>
+            <StackLayout Padding="40" Spacing="10">
+                 <Label  HorizontalOptions="CenterAndExpand" 
+                              Text="QuickBucks" 
+                              TextColor="White" 
+                              FontSize="40" />
+                
+                <local:ImageEntry TextColor="Black" 
+                        PlaceholderColor="{StaticResource SecondaryColor}" 
+                        Image="user" 
+                        Placeholder="Email" 
+                        HorizontalOptions="FillAndExpand"/>
+                <local:ImageEntry TextColor="Black" 
+                    PlaceholderColor="{StaticResource SecondaryColor}"  
+                    Image="password" 
+                    IsPassword="true"
+                    Placeholder="Password" 
+                    HorizontalOptions="FillAndExpand"/>
+
+                <Button HeightRequest="50" 
+                         TextColor="White" 
+                         Text="Login"  
+                         BackgroundColor="{StaticResource SecondaryColor}"
+                         HorizontalOptions="FillAndExpand"/>
+                 <Button HeightRequest="50" 
+                         TextColor="White" 
+                         Text="Login with Touch ID"  
+                         BackgroundColor="{StaticResource SecondaryColor}"
+                         HorizontalOptions="FillAndExpand"/>
+                <Label  Text="Forgot password" 
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource SecondaryColor}"/>
+                
+                 <Label Margin="0,0,0,20" Text="I don't have an account" VerticalOptions="EndAndExpand"
+                        HorizontalOptions="Center" 
+                        TextColor="{StaticResource SecondaryColor}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                    Tapped="Handle_Tapped"
+                                    NumberOfTapsRequired="1" />
+                      </Label.GestureRecognizers>
+                  </Label>
+             </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

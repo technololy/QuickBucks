@@ -17,7 +17,7 @@ namespace QuickBucks.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Quick Bucks";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

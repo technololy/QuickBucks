@@ -6,12 +6,11 @@ namespace QuickBucks.Models
 {
     public enum MenuItemType
     {
-        Browse,
-        About,
         Home,
         Loan,
         Liquidate,
-        ResetPassword
+        ResetPassword,
+        About
     }
     public class HomeMenuItem
     {

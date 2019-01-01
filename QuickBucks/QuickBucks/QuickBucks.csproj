@@ -29,8 +29,12 @@
     <Folder Include="Views\Dashboard\" />
     <Folder Include="Controls\" />
     <Folder Include="Views\Tests\" />
+    <Folder Include="Views\Onboarding\" />
+    <Folder Include="Views\Onboarding\Login\" />
+    <Folder Include="Views\Onboarding\SignUp\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Views\Test\MyPage.xaml.cs" />
+    <Compile Remove="Views\Onboarding\Login.xaml.cs" />
   </ItemGroup>
 </Project>

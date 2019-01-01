@@ -22,7 +22,7 @@
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <dashb:Landing/>
+                <dashb:LandingHome/>
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

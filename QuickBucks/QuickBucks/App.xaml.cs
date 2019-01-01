@@ -15,7 +15,8 @@ namespace QuickBucks
             InitializeComponent();
 
 
-            MainPage = new LandingHome();
+            //MainPage = new MainPage();
+            MainPage = new NavigationPage(new Views.Onboarding.Login.Login());
         }
 
         protected override void OnStart()
