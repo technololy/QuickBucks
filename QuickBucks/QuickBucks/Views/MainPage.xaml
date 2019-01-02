@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:QuickBucks.Views" xmlns:dashb="clr-namespace:QuickBucks.Views.Dashboard" x:Class="QuickBucks.Views.MainPage">
+<MasterDetailPage 
+     NavigationPage.HasNavigationBar="False"
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                  xmlns:views="clr-namespace:QuickBucks.Views" 
+                  xmlns:dashb="clr-namespace:QuickBucks.Views.Dashboard" 
+                  x:Class="QuickBucks.Views.MainPage">
     <MasterDetailPage.Master>
         <NavigationPage Title="Menuz">
             <NavigationPage.Icon>

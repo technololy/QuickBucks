@@ -14,7 +14,12 @@ namespace QuickBucks.Views.Onboarding.Login
 
         void Handle_Tapped(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+        }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+
         }
     }
 }

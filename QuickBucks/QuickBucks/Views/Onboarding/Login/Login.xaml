@@ -29,6 +29,7 @@
                 <Button HeightRequest="50" 
                          TextColor="White" 
                          Text="Login"  
+                        Clicked="Handle_Clicked"
                          BackgroundColor="{StaticResource SecondaryColor}"
                          HorizontalOptions="FillAndExpand"/>
                  <Button HeightRequest="50" 

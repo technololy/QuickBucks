@@ -128,6 +128,14 @@
     <BundleResource Include="Resources\email.png" />
     <BundleResource Include="Resources\password.png" />
     <BundleResource Include="Resources\user.png" />
+    <BundleResource Include="Resources\acrobatics.json" />
+    <BundleResource Include="Resources\biking_is_cool.json" />
+    <BundleResource Include="Resources\bikingishard.json" />
+    <BundleResource Include="Resources\so_excited.json" />
+    <BundleResource Include="Resources\cash.json" />
+    <BundleResource Include="Resources\money.json" />
+    <BundleResource Include="Resources\wallet_coin.json" />
+    <BundleResource Include="Resources\wallet.json" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -140,6 +148,15 @@
       <Version>1.0.121-pre</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
+      <Version>2.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="CarouselView.FormsPlugin">
+      <Version>5.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamanimation">
+      <Version>1.2.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>

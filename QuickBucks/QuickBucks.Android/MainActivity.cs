@@ -19,6 +19,8 @@ namespace QuickBucks.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            //AnimationViewRenderer.Init();
+            
             LoadApplication(new App());
         }
     }
