@@ -6,7 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
+using Lottie.Forms.Droid;
 namespace QuickBucks.Droid
 {
     [Activity(Label = "QuickBucks", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -19,7 +19,7 @@ namespace QuickBucks.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            //AnimationViewRenderer.Init();
+            AnimationViewRenderer.Init();
             
             LoadApplication(new App());
         }
