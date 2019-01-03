@@ -19,7 +19,7 @@
         <Grid Grid.Row="0" RowSpacing="0" ColumnSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
-                <RowDefinition Height="0.4*" />
+                <RowDefinition Height="0.5*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -38,8 +38,8 @@
                 <Label Text="Welcome, &#10; OLOLADE OYEBANJI" TextColor="White" />
               
             </Frame>
-            <Button x:Name="LoanOffers" TextColor="White" BorderRadius="0" HeightRequest="10" Margin="5,0,0,0" Text="Your Loans offers" Grid.Row="1" Grid.Column="0" BackgroundColor="orange" />
-            <Button x:Name="BankOffers" TextColor="orange" BorderRadius="0" HeightRequest="10" Margin="0,0,5,0" Text="Your Bank Account" Grid.Row="1" Grid.Column="1" BackgroundColor="White" />
+            <Button x:Name="LoanOffers" TextColor="White" BorderRadius="0" HeightRequest="10" Margin="5,0,0,0" Text="Your Loans offers" Grid.Row="1" Grid.Column="0" />
+            <Button x:Name="BankOffers" TextColor="{StaticResource SecondaryColor}" BorderRadius="0" HeightRequest="10" Margin="0,0,5,0" Text="Your Bank Account" Grid.Row="1" Grid.Column="1" BackgroundColor="White" />
         </Grid>
         <StackLayout Margin="5,0,0,0" Grid.Row="1">
             <Label Text="INSTANT LOAN PRODUCTS" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="White" />

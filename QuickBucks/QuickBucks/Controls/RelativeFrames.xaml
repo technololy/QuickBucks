@@ -3,10 +3,11 @@
     <ContentView.Content>
         <RelativeLayout>
             <Frame CornerRadius="10" 
-                   HasShadow="false" 
-                   x:Name="ProductSection" 
+                   HasShadow="true" 
+                   x:Name="ProductSection"
+                   Padding="5"
                    Margin="5,0,5,0" 
-                   BackgroundColor="orange" 
+                   BackgroundColor="{StaticResource SecondaryColor}" 
                    RelativeLayout.WidthConstraint="{ConstraintExpression &#xA;            Type=RelativeToParent,&#xA;            Property=Width,&#xA;            Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression &#xA;            Type=RelativeToParent,&#xA;            Property=Height,&#xA;            Factor=0.98}">
            <!--   <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
             <Label Text="2 Months" 
@@ -16,16 +17,10 @@
                    AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional" />
                 </AbsoluteLayout>-->
                 <Grid>
-                  
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="0.92*" />
-                        <RowDefinition Height="0.08*" />
-                    </Grid.RowDefinitions>
-                    <Label Text="12 Months"
+                    <Label Text="30 Months"
                            TextColor="White"
                            FontSize="13"
                            LineBreakMode="TailTruncation"
-                           Grid.Row="1" 
                            HorizontalOptions="CenterAndExpand" 
                            VerticalOptions="EndAndExpand" />
                 </Grid>
@@ -53,7 +48,9 @@
                    />-->
             <Frame x:Name="ProductDisplay" 
                    CornerRadius="0" 
-                   HasShadow="true" 
+                   Padding="5"
+                   HasShadow="true"
+                   OutlineColor="{OnPlatform Android='Gray'}"
                    BackgroundColor="{StaticResource PrimaryColor}" 
                    RelativeLayout.WidthConstraint="{ConstraintExpression &#xA;            Type=RelativeToParent,&#xA;            Property=Width,&#xA;            Factor=1}" RelativeLayout.HeightConstraint="{ConstraintExpression &#xA;            Type=RelativeToView,&#xA;            ElementName=ProductSection,&#xA;            Property=Height,&#xA;            Factor=0.85}">
                 <Grid HorizontalOptions="CenterAndExpand">
@@ -62,7 +59,7 @@
                         <RowDefinition Height="*" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
-                    <Label Text="$50,000,000" FontSize="10" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Start" LineBreakMode="NoWrap" Grid.Row="0" />
+                    <Label Text="$90,000,000" FontSize="12" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Start" LineBreakMode="NoWrap" Grid.Row="0" />
                     <Image Source="tab_feed.png" Grid.Row="1" />
                     <Label Text="PAY DAY LOAN" FontSize="13" TextColor="White" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" MaxLines="2" Grid.Row="2" />
                 </Grid>
