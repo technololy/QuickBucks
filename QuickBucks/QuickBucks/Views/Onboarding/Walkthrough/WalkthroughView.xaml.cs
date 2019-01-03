@@ -15,10 +15,12 @@ namespace Walkthrough.Views
 
 			_views = new View[]
 			{
-				new BikingHardView(),
+                new BikingCoolView(),
+
+
+                new BikingHardView(),
 				new AcrobaticsView(),
-				new SoExcitedView(),
-				new BikingCoolView()
+				new SoExcitedView()
 			};
 
 			Carousel.ItemsSource = _views;

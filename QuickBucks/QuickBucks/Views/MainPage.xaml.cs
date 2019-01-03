@@ -22,7 +22,9 @@ namespace QuickBucks.Views
 
         public async Task NavigateFromMenu(int id)
         {
-            if (!MenuPages.ContainsKey(id))
+            try 
+            {
+                    if (!MenuPages.ContainsKey(id))
             {
                 switch (id)
                 {
@@ -53,6 +55,12 @@ namespace QuickBucks.Views
 
                 IsPresented = false;
             }
+            } 
+            catch (Exception ex) 
+            {
+                
+            }
+
         }
     }
 }
