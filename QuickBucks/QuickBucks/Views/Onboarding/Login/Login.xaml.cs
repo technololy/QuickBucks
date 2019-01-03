@@ -18,7 +18,10 @@ namespace QuickBucks.Views.Onboarding.Login
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new MainPage());
+            //Navigation.PushAsync(new MainPage());
+           //Application.Current.MainPage.Navigation.PushAsync(new MainPage());
+          Application.Current.MainPage = (new MainPage());
+
 
         }
     }

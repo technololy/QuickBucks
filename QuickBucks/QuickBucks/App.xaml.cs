@@ -15,7 +15,7 @@ namespace QuickBucks
             InitializeComponent();
 
 
-            //MainPage = new NavigationPage(new Views.Onboarding.Login.Login());
+            //MainPage = (new MainPage());
             MainPage = new NavigationPage(new Walkthrough.Views.WalkthroughView());
         }
 
