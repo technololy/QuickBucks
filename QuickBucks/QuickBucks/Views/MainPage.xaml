@@ -10,8 +10,8 @@
         <NavigationPage Title="Menuz">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png" />
-                    <On Platform="Android" Value="tab_feed.png" />
+                    <On Platform="iOS" Value="ic_menuu.png" />
+                    <On Platform="Android" Value="ic_menu.png" />
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
@@ -30,7 +30,7 @@
         <NavigationPage>
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png" />
+                    <On Platform="iOS" Value="ic_menu.png" />
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>

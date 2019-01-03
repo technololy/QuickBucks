@@ -139,6 +139,7 @@
     <BundleResource Include="Resources\wallet_coin.json" />
     <BundleResource Include="Resources\wallet.json" />
     <BundleResource Include="Resources\ic_menu.png" />
+    <BundleResource Include="Resources\ic_menuu.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
